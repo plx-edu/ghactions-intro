@@ -1,25 +1,34 @@
+import { BrowserRouter, NavLink } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
 import './App.css';
+import Dashboard from './components/Dashboard';
+import HomePage from './components/HomePage';
+
+const navStyle = {
+  width: "100%",
+  height: "25px",
+
+  marginBottom: "10px",
+
+  display: "flex",
+  justifyContent: "space-around",
+  alignItems: "center",
+
+  borderBottom: "1px solid lightgrey"
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div>
-          Greetings and Salutations
-        </div>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div style={navStyle}>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="dashboard">Dashboard</NavLink>
+      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter >
   );
 }
 

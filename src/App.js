@@ -13,8 +13,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Greetings and Salutations
+          Learn React
         </a>
+        <div>
+          Greetings and Salutations
+        </div>
       </header>
     </div>
   );

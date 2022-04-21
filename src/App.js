@@ -12,6 +12,8 @@ function App() {
         <NavLink to="/">Home</NavLink>
         <div className='navbr' ></div>
         <NavLink to="dashboard">Dashboard</NavLink>
+        <div className='navbr' ></div>
+        <NavLink to="api">API</NavLink>
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />

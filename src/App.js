@@ -13,7 +13,7 @@ function App() {
         <div className='navbr' ></div>
         <NavLink to="dashboard">Dashboard</NavLink>
         <div className='navbr' ></div>
-        <NavLink to="api">API</NavLink>
+        <NavLink to="#">soon™</NavLink>
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
